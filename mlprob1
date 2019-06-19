@@ -1,0 +1,7 @@
+import numpy as np
+a=np.random.rand(3,2)                    #creating array of 3*2 with random numbers
+a
+array([[0.64360099, 0.05063919],
+       [0.38944872, 0.88932666],
+       [0.69532155, 0.47214978]])
+np.save('npfile',a).                     #saving to file
