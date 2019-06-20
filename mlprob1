@@ -1,4 +1,8 @@
 import numpy as np
-a=np.random.rand(3,2)                    #creating array of 3*2 with random numbers
-a
-np.save('npfile',a).                     #saving to file
+import random
+r=int(input("enter no of rows="))            #taking input from user of no of rows
+c=int(input("enter no of columns="))         #taking input from user of no of columns
+a=np.random.random((r,c))                    #creating array of r*c with random numbers
+print(a)                                     #printing elements of array a
+np.savetxt('p1.txt',a).                      #saving to file
+np.loadtxt('p1.txt')                         #loading from file
